@@ -1,3 +1,4 @@
+# Найти все sift features точки на изображении
 import cv2
 
 image_path = "input_images/photo2.jpg"

@@ -1,4 +1,4 @@
-# Important NOTE:  Use opencv >=4.4
+# Перевести в grayscale
 import cv2
 
 image_path = "input_images/photo1.jpg"

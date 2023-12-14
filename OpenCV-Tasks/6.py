@@ -1,3 +1,4 @@
+# Отразить изображение по правой границе
 import cv2
 
 image_path = "input_images/photo2.jpg"
