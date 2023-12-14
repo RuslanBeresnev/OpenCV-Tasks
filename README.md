@@ -9,8 +9,24 @@
 cd OpenCV-Tasks
 ```
 
-2. Update pip and install packages
+2. Create a virtual environment 
+```bash
+python -m venv venv
+```
+
+3. Activate the virtual environment
+```bash
+.\venv\Scripts\activate # for Windows
+. venv/bin/activate # for Linux
+```
+
+4. Update pip and install packages
 ```bash
 pip install --upgrade pip
 pip instal -r requirements.txt
+```
+
+5. Run the required script
+```bash
+python *.py
 ```
