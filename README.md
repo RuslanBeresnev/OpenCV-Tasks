@@ -23,7 +23,7 @@ python -m venv venv
 4. Update pip and install packages
 ```bash
 pip install --upgrade pip
-pip instal -r requirements.txt
+pip install -r requirements.txt
 ```
 
 5. Run the required script
