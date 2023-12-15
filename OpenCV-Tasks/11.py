@@ -1,14 +1,13 @@
 # Изменить яркость изображения
 import cv2
-import numpy as np
 
 image_path = "input_images/photo3.jpg"
 output_image_path = "output_images/brightened_image.jpg"
 
 img = cv2.imread(image_path)
 
-# Lightening with gamma-correction
-gamma = 0.5
-brightened_image = np.clip(np.power(img / 255.0, gamma) * 255.0, 0, 255).astype(np.uint8)
+alpha = 1  # Contrast control (1.0-3.0)
+beta = 75  # Brightness control (0-100)
+brightened_image = cv2.convertScaleAbs(img, alpha=alpha, beta=beta)
 
 cv2.imwrite(output_image_path, brightened_image)
