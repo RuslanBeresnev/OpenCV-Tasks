@@ -12,13 +12,12 @@ f_transform = np.fft.fft2(img)
 
 # Shift of zero frequency to the center
 f_transform_shifted = np.fft.fftshift(f_transform)
-magnitude_spectrum = np.log(np.abs(f_transform_shifted) + 1)
 
 # Create a mask for filtering (leaving only high frequencies)
 rows, cols = img.shape
 mask = np.ones((rows, cols), np.uint8)
 # Circular window radius for high frequencies
-r = 30
+r = 100
 center = [rows // 2, cols // 2]
 # Represent the image as a grid with x and y axes
 x, y = np.ogrid[:rows, :cols]
